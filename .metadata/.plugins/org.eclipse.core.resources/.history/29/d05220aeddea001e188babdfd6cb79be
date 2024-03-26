@@ -1,0 +1,32 @@
+package testCase;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import base.base;
+
+public class FileUpload extends base{
+
+	@Test
+	public static void Upload() throws InterruptedException, IOException {
+		
+		driver.findElement(By.xpath("/html/body/div/div/li[8]/a")).click();
+//		File uploadFile = new File("C:\\Users\\Jitendra\\Downloads\\New.jpg");
+		
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath("/html/body/div/form/div/div/span[1]/button")).click();
+		driver.navigate().to("C:\\Users\\Jitendra\\Downloads\\New.jpg");
+//		WebElement upload = driver.findElement(By.xpath("/html/body/div/form/div/div/span[1]/button"));
+//		upload.sendKeys(uploadFile.getCanonicalPath());
+	    
+		Thread.sleep(5000);
+		
+		driver.findElement(By.className("btn btn-warning btn-reset")).click();
+		
+	}
+}

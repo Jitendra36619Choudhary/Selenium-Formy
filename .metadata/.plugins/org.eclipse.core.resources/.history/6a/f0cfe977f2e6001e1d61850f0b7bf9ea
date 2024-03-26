@@ -1,0 +1,16 @@
+package testCases;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class Login extends base{
+
+	public static void LoginTest() {
+		
+		
+		driver.findElement(By.className("login")).click();
+		driver.findElement(By.id("login_id")).sendKeys("jitendrachoudhary36619@gmail.com");
+		driver.findElement(By.id("nextbtn")).click();
+	}
+}

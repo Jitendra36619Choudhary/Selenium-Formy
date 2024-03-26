@@ -1,0 +1,17 @@
+package testCase;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class Checkbox extends base{
+
+	public static void CheckboxTest() {
+		// TODO Auto-generated method stub
+
+		WebElement action = driver.findElement(By.xpath("/html/body/div/div/li[3]/a"));
+		
+		
+	}
+
+}

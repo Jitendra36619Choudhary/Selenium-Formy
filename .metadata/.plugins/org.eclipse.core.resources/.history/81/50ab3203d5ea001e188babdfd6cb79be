@@ -1,0 +1,19 @@
+package testCase;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class Dropdown extends base {
+	
+	public static void DropNTest() throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		driver.findElement(By.xpath("/html/body/div/div/li[6]/a")).click();
+		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div/div/div/a[11]")).click();
+		
+	}
+
+}

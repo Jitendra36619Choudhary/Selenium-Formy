@@ -1,0 +1,19 @@
+package testCase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import base.base;
+
+public class FileUpload extends base{
+
+	
+	public static void Upload() {
+		
+		driver.findElement(By.xpath("/html/body/div/div/li[8]/a")).click();
+		driver.findElement(By.className("btn btn-secondary btn-choose"));
+		
+		WebElement upload = driver.findElement(By.cssSelector("body > div > form > div > div > span:nth-child(1) > button"));
+		upload.sendKeys("C:\\Users\\Jitendra\\Downloads\\New.jpg");
+	}
+}

@@ -1,0 +1,20 @@
+package testCase;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class EnableElement extends base{
+	
+	public static void EnableNDisable() {
+		
+		driver.findElement(By.xpath("/html/body/div/div/li[7]/a")).click();
+		
+		driver.findElement(By.id("disabledInput")).click();
+		System.out.println("Disable button pressed");
+		driver.findElement(By.id("input")).sendKeys("Jitendra Choudhary");
+		
+		
+	}
+
+}

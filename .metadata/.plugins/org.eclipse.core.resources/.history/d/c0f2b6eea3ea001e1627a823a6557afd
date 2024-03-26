@@ -1,0 +1,30 @@
+package base;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class base {
+
+	public static WebDriver driver;
+	public static Properties prop = new Properties();
+	public static Properties loc = new Properties();
+	public static FileReader fr;
+	public static FileReader fr1;
+	
+	public void setup() throws FileNotFoundException {
+		
+		if (driver == null) {
+			fr = new FileReader(System.getProperty("user.dir"+"\\src\\test\\resources\\configfiles\\config.properties"));
+			fr1 = new FileReader(System.getProperty("user.dir"+"\\src\\test\\resources\\configfiles\\locators.properties"));
+			prop.load(fr);
+			loc.load(fr1);
+		}
+		
+	}
+	
+	
+
+}

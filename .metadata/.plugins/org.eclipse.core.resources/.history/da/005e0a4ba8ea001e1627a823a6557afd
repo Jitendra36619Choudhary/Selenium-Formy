@@ -1,0 +1,22 @@
+package testCase;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class Button extends base{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		driver.findElement(By.id("btn btn-lg btn-success")).click();
+		driver.findElement(By.id("btn btn-lg btn-primary")).click();
+		driver.findElement(By.id("btn btn-lg btn-info")).click();
+		driver.findElement(By.id("btn btn-lg btn-warning")).click();
+		driver.findElement(By.id("btn btn-lg btn-danger")).click();
+		driver.findElement(By.id("btn btn-lg btn-primary dropdown-toggle")).click();
+		
+		
+	}
+
+}

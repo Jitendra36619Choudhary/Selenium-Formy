@@ -1,0 +1,22 @@
+package testCase;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class Checkbox extends base{
+
+	public static void CheckboxTest() throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		driver.findElement(By.id("checkbox-1")).click();
+		driver.findElement(By.id("checkbox-2")).click();
+		driver.findElement(By.id("checkbox-3")).click();
+		driver.findElement(By.id("checkbox-1")).click();
+		driver.findElement(By.id("checkbox-2")).click();
+		driver.findElement(By.id("checkbox-3")).click();
+		
+		
+	}
+
+}

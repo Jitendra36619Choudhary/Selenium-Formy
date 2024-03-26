@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<classes>
+			<class name="testCase.Autocomplete" />
+			<class name="testCase.Button" />
+			<class name="testCase.Checkbox" />
+			<class name="testCase.CompletForm" />
+			<class name="testCase.DatePicker" />
+			<class name="testCase.DragAndDrop" />
+			<class name="testCase.Dropdown" />
+			<class name="testCase.EnableElement" />
+			<class name="testCase.DatePicker" />
+			<class name="testCase.DatePicker" />
+			
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

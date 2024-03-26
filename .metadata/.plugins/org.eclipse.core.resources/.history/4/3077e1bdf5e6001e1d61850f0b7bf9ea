@@ -1,0 +1,21 @@
+package testCases;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import base.base;
+
+public class Login extends base{
+
+	@Test
+	public static void LoginTest() throws InterruptedException {
+		
+		
+		driver.findElement(By.className("login")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.id("login_id")).sendKeys("jitendrachoudhary36619@gmail.com");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id=\"nextbtn\"]")).click();
+		Thread.sleep(3000);
+	}
+}

@@ -1,0 +1,19 @@
+package testCase;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import base.base;
+
+public class KeyAndMouse extends base{
+	
+	@Test
+	public static void KeyMouse() throws InterruptedException {
+		
+		driver.findElement(By.xpath("/html/body/div/div/li[9]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"name\"]")).sendKeys("Jitendra Choudhary");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id=\"button\"]")).click();
+	}
+
+}

@@ -1,0 +1,21 @@
+package testCase;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class DatePicker extends base{
+
+	
+	public static void DatePickTest() {
+		
+		driver.findElement(By.xpath("/html/body/div/div/li[4]/a")).click();
+		
+		for(int i=1;i<=50;i++) {
+			
+			
+			driver.findElement(By.id("datepicker")).click();
+		}
+		
+	}
+}

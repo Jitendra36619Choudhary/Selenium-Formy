@@ -1,0 +1,16 @@
+package testCase;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class Modal extends base{
+	
+	public static void ModalTest() {
+		
+		driver.findElement(By.xpath("/html/body/div/div/li[10]/a")).click();
+		driver.findElement(By.id("modal-button")).click();
+		driver.findElement(By.id("close-button")).click();
+	}
+
+}

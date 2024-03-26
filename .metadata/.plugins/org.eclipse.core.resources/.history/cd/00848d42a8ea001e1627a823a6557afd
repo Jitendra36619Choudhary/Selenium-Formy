@@ -1,0 +1,21 @@
+package testCase;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class Autocomplete extends base {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		driver.findElement(By.className("btn btn-lg")).click();
+		driver.findElement(By.className("form-control pac-target-input")).sendKeys("House. no. 1, gurgaon");
+		driver.findElement(By.id("street_number")).sendKeys("XYZ");
+		driver.findElement(By.id("locality")).sendKeys("Gurgaon");
+		driver.findElement(By.id("administrative_area_level_1")).sendKeys("Haryana");
+		driver.findElement(By.id("postal_code")).sendKeys("123456");
+		driver.findElement(By.id("country")).sendKeys("India");
+	}
+
+}

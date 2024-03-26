@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-26T03:42:49 IST" name="Suite" finished-at="2024-03-26T03:44:46 IST" duration-ms="116656">
+    <groups>
+    </groups>
+    <test started-at="2024-03-26T03:42:49 IST" name="Test" finished-at="2024-03-26T03:44:46 IST" duration-ms="116656">
+      <class name="testCase.KeyAndMouse">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.KeyAndMouse@402c4085]" started-at="2024-03-26T03:43:48 IST" name="setup" finished-at="2024-03-26T03:43:50 IST" duration-ms="2692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="KeyMouse()[pri:0, instance:testCase.KeyAndMouse@402c4085]" started-at="2024-03-26T03:43:50 IST" name="KeyMouse" finished-at="2024-03-26T03:43:56 IST" duration-ms="5330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyMouse -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.KeyAndMouse@402c4085]" started-at="2024-03-26T03:43:56 IST" name="tearnDown" finished-at="2024-03-26T03:43:56 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.KeyAndMouse -->
+      <class name="testCase.DragAndDrop">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.DragAndDrop@353352b6]" started-at="2024-03-26T03:43:21 IST" name="setup" finished-at="2024-03-26T03:43:24 IST" duration-ms="2754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DragNDroptest()[pri:0, instance:testCase.DragAndDrop@353352b6]" started-at="2024-03-26T03:43:24 IST" name="DragNDroptest" finished-at="2024-03-26T03:43:29 IST" duration-ms="5027" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: unknown
+at org.openqa.selenium.By$ByClassName.<init>(By.java:309)
+at org.openqa.selenium.By.className(By.java:100)
+at testCase.DragAndDrop.DragNDroptest(DragAndDrop.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragNDroptest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.DragAndDrop@353352b6]" started-at="2024-03-26T03:43:29 IST" name="tearnDown" finished-at="2024-03-26T03:43:29 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.DragAndDrop -->
+      <class name="testCase.RadioButton">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.RadioButton@710c2b53]" started-at="2024-03-26T03:44:08 IST" name="setup" finished-at="2024-03-26T03:44:11 IST" duration-ms="2670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="RadioTest()[pri:0, instance:testCase.RadioButton@710c2b53]" started-at="2024-03-26T03:44:11 IST" name="RadioTest" finished-at="2024-03-26T03:44:14 IST" duration-ms="3073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RadioTest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.RadioButton@710c2b53]" started-at="2024-03-26T03:44:14 IST" name="tearnDown" finished-at="2024-03-26T03:44:14 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.RadioButton -->
+      <class name="testCase.Checkbox">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.Checkbox@5032714f]" started-at="2024-03-26T03:43:12 IST" name="setup" finished-at="2024-03-26T03:43:14 IST" duration-ms="2622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckboxTest()[pri:0, instance:testCase.Checkbox@5032714f]" started-at="2024-03-26T03:43:14 IST" name="CheckboxTest" finished-at="2024-03-26T03:43:15 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckboxTest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.Checkbox@5032714f]" started-at="2024-03-26T03:43:15 IST" name="tearnDown" finished-at="2024-03-26T03:43:15 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.Checkbox -->
+      <class name="testCase.Autocomplete">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.Autocomplete@5d0bf09b]" started-at="2024-03-26T03:42:49 IST" name="setup" finished-at="2024-03-26T03:42:53 IST" duration-ms="3439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AutoTest()[pri:0, instance:testCase.Autocomplete@5d0bf09b]" started-at="2024-03-26T03:42:53 IST" name="AutoTest" finished-at="2024-03-26T03:42:59 IST" duration-ms="6199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AutoTest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.Autocomplete@5d0bf09b]" started-at="2024-03-26T03:42:59 IST" name="tearnDown" finished-at="2024-03-26T03:42:59 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.Autocomplete -->
+      <class name="testCase.SwitchWindow">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.SwitchWindow@5386659f]" started-at="2024-03-26T03:44:14 IST" name="setup" finished-at="2024-03-26T03:44:17 IST" duration-ms="2608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="WindowTest()[pri:0, instance:testCase.SwitchWindow@5386659f]" started-at="2024-03-26T03:44:17 IST" name="WindowTest" finished-at="2024-03-26T03:44:31 IST" duration-ms="14439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WindowTest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.SwitchWindow@5386659f]" started-at="2024-03-26T03:44:31 IST" name="tearnDown" finished-at="2024-03-26T03:44:31 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.SwitchWindow -->
+      <class name="testCase.PageScroll">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.PageScroll@2767e23c]" started-at="2024-03-26T03:44:01 IST" name="setup" finished-at="2024-03-26T03:44:04 IST" duration-ms="2666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="PageScrollTest()[pri:0, instance:testCase.PageScroll@2767e23c]" started-at="2024-03-26T03:44:04 IST" name="PageScrollTest" finished-at="2024-03-26T03:44:08 IST" duration-ms="4347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageScrollTest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.PageScroll@2767e23c]" started-at="2024-03-26T03:44:08 IST" name="tearnDown" finished-at="2024-03-26T03:44:08 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.PageScroll -->
+      <class name="testCase.Button">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.Button@5524cca1]" started-at="2024-03-26T03:42:59 IST" name="setup" finished-at="2024-03-26T03:43:02 IST" duration-ms="2695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ButtonTest()[pri:0, instance:testCase.Button@5524cca1]" started-at="2024-03-26T03:43:02 IST" name="ButtonTest" finished-at="2024-03-26T03:43:12 IST" duration-ms="10175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ButtonTest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.Button@5524cca1]" started-at="2024-03-26T03:43:12 IST" name="tearnDown" finished-at="2024-03-26T03:43:12 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.Button -->
+      <class name="testCase.CompleteForm">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.CompleteForm@14028087]" started-at="2024-03-26T03:44:31 IST" name="setup" finished-at="2024-03-26T03:44:34 IST" duration-ms="2689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FormTest()[pri:0, instance:testCase.CompleteForm@14028087]" started-at="2024-03-26T03:44:34 IST" name="FormTest" finished-at="2024-03-26T03:44:46 IST" duration-ms="11780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FormTest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.CompleteForm@14028087]" started-at="2024-03-26T03:44:46 IST" name="tearnDown" finished-at="2024-03-26T03:44:46 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.CompleteForm -->
+      <class name="testCase.Modal">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.Modal@6fa51cd4]" started-at="2024-03-26T03:43:56 IST" name="setup" finished-at="2024-03-26T03:43:58 IST" duration-ms="2576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ModalTest()[pri:0, instance:testCase.Modal@6fa51cd4]" started-at="2024-03-26T03:43:58 IST" name="ModalTest" finished-at="2024-03-26T03:44:01 IST" duration-ms="2319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ModalTest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.Modal@6fa51cd4]" started-at="2024-03-26T03:44:01 IST" name="tearnDown" finished-at="2024-03-26T03:44:01 IST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.Modal -->
+      <class name="testCase.Dropdown">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.Dropdown@4681c175]" started-at="2024-03-26T03:43:29 IST" name="setup" finished-at="2024-03-26T03:43:32 IST" duration-ms="2659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DropNTest()[pri:0, instance:testCase.Dropdown@4681c175]" started-at="2024-03-26T03:43:32 IST" name="DropNTest" finished-at="2024-03-26T03:43:40 IST" duration-ms="8386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropNTest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.Dropdown@4681c175]" started-at="2024-03-26T03:43:40 IST" name="tearnDown" finished-at="2024-03-26T03:43:41 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.Dropdown -->
+      <class name="testCase.DatePicker">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.DatePicker@48bb62]" started-at="2024-03-26T03:43:15 IST" name="setup" finished-at="2024-03-26T03:43:18 IST" duration-ms="2721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DatePickTest()[pri:0, instance:testCase.DatePicker@48bb62]" started-at="2024-03-26T03:43:18 IST" name="DatePickTest" finished-at="2024-03-26T03:43:21 IST" duration-ms="3786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DatePickTest -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.DatePicker@48bb62]" started-at="2024-03-26T03:43:21 IST" name="tearnDown" finished-at="2024-03-26T03:43:21 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.DatePicker -->
+      <class name="testCase.EnableElement">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.EnableElement@57a78e3]" started-at="2024-03-26T03:43:41 IST" name="setup" finished-at="2024-03-26T03:43:43 IST" duration-ms="2616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="EnableNDisable()[pri:0, instance:testCase.EnableElement@57a78e3]" started-at="2024-03-26T03:43:43 IST" name="EnableNDisable" finished-at="2024-03-26T03:43:48 IST" duration-ms="4336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnableNDisable -->
+        <test-method is-config="true" signature="tearnDown()[pri:0, instance:testCase.EnableElement@57a78e3]" started-at="2024-03-26T03:43:48 IST" name="tearnDown" finished-at="2024-03-26T03:43:48 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearnDown -->
+      </class> <!-- testCase.EnableElement -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

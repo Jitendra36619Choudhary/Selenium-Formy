@@ -1,0 +1,20 @@
+package testCase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
+
+import base.base;
+
+public class DragAndDrop extends base {
+
+	
+	public static void DragNDroptest() {
+		
+		driver.findElement(By.xpath("/html/body/div/div/li[5]/a")).click();
+		
+		Actions actions = new Actions(driver);
+		actions.dragAndDrop("//*[@id=\"image\"]/img", "//*[@id=\"box\"]");
+		
+		
+	}
+}

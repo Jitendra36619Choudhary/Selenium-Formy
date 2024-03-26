@@ -1,0 +1,16 @@
+package testCase;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class SwitchWindow extends base {
+	
+	public static void WindowTest() {
+		
+		driver.findElement(By.xpath("/html/body/div/div/li[13]/a")).click();
+		
+		driver.findElement(By.id("new-tab-button")).click();
+	}
+
+}

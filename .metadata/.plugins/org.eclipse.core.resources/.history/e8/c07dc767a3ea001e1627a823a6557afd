@@ -1,0 +1,18 @@
+package base;
+
+import java.io.FileReader;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class base {
+
+	public static WebDriver driver;
+	public static Properties prop = new Properties();
+	public static Properties loc = new Properties();
+	public static FileReader fr;
+	public static FileReader fr1;
+	
+	
+
+}

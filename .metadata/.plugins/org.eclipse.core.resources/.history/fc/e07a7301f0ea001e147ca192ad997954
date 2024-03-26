@@ -1,0 +1,39 @@
+package testCase;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import base.base;
+
+public class SwitchWindow extends base {
+
+	@Test
+	public static void WindowTest() throws InterruptedException {
+
+		driver.findElement(By.xpath("/html/body/div/div/li[13]/a")).click();
+
+		driver.findElement(By.xpath("//*[@id=\"new-tab-button\"]")).click();
+
+		Set<String> window = driver.getWindowHandles();
+
+		Iterator<String> iterator = window.iterator();
+		String parent = iterator.next();
+		String child = iterator.next();
+
+		Thread.sleep(2000);
+		driver.switchTo().window(child);
+
+		while (iterator.hasNext()){
+			String parent = iterator.next();
+			String child = iterator.next();
+			driver.switchTo().window(newwin);
+			//perform actions on new window
+			driver.close();
+			driver.switchTo().window(parent);
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package testCase;
+
+import org.openqa.selenium.By;
+
+import base.base;
+
+public class CompleteForm extends base{
+	
+	public static void FormTest() {
+		
+		
+		driver.findElement(By.xpath("/html/body/div/div/li[14]/a")).click();
+		
+		driver.findElement(By.id("first-name")).sendKeys("Jitendra");
+		driver.findElement(By.id("last-name")).sendKeys("Choudhary");
+		driver.findElement(By.id("job-title")).sendKeys("QA Automation Engineer");
+		driver.findElement(By.xpath("//*[@id=\"radio-button-3\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"checkbox-1\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"select-menu\"]")).click();
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+login_btn = login
+user_field = login_id
+next_btn = //*[@id=\"nextbtn\
+
+pwd_fild = password
+login_next_btn = nextbtn

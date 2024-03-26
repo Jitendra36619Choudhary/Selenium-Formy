@@ -1,0 +1,21 @@
+package testCase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import base.base;
+
+public class KeyAndMouse extends base{
+	
+	@Test
+	public static void KeyMouse() throws InterruptedException {
+		
+		driver.findElement(By.xpath("/html/body/div/div/li[9]/a")).click();
+		
+		Actions actions = new Actions(driver);
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id=\"button\"]")).click();
+	}
+
+}
